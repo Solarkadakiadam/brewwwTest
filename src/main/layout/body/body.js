@@ -1,11 +1,11 @@
 import Title from "../../components/title/title";
 import "./body.scss";
 import { useAPI } from "../../context/apiContext";
-import { useState } from "react";
 import Card from "../../components/card/card";
+import ErrorCard from "../../components/errorCard/errorCard";
 
 function Body() {
-  const { data } = useAPI();
+  const { data, loading } = useAPI();
 
   function group(arr) {
     return arr.reduce(function (res, obj) {
@@ -19,30 +19,33 @@ function Body() {
 
   const renderPages = () => {
     if (data && data?.numFound > 0) {
-      var dataToSend = [data.docs[0], data.docs[2], data.docs[1]];
+      let bookObject = group(data.docs);
       return (
         <div className="cardContainer">
-          {/* {data.docs.map((item)=>{
-         return <Card data= {item}/>
-       })} */}
-
-          <Card data={dataToSend} />
-          <Card data={dataToSend} />
-          <Card data={dataToSend} />
-          <Card data={dataToSend} />
-          <Card data={dataToSend} />
-          <Card data={dataToSend} />
+          {Object.keys(bookObject).map(function (year, index) {
+            return (
+              <Card
+                key={index}
+                data={bookObject[year]}
+                year={year}
+                colorKey={index}
+              />
+            );
+          })}
         </div>
       );
+    }
+    if (loading === false) {
+      return <ErrorCard />;
     } else {
-      return <div>no data found</div>;
+      return null;
     }
   };
 
   return (
-    <div className="body">
+    <div className="container">
       <Title />
-      {renderPages()}
+      <div className="containerBody">{renderPages()}</div>
     </div>
   );
 }

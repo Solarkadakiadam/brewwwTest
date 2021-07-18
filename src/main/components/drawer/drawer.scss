@@ -1,0 +1,57 @@
+.drawer {
+  margin-bottom: 30px;
+  .drawerTitle {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    span {
+      font-size: 20px;
+      color: #707090;
+      overflow: hidden;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .drawerBody {
+    span {
+      color: #707070;
+    }
+    .drawerSubSection {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .editions {
+        background-color: #82c786;
+        width: 110px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px 5px 0px;
+        span {
+          color: white;
+          font-weight: 600;
+        }
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      .drawerSecondSubSection {
+        display: flex;
+        img {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}

@@ -1,17 +1,12 @@
-import './spinner.scss';
+import "./spinner.scss";
 import Loader from "react-loader-spinner";
 
 function Spinner() {
   return (
-  <div className="spinner">
-      <Loader
-      type="Circles"
-      color="#373A3B"
-      height={30}
-      width={30}
-      />
+    <div className="spinner">
+      <Loader type="Circles" color="#373A3B" height={30} width={30} />
       <h4>Loading...</h4>
-  </div>
+    </div>
   );
 }
 
