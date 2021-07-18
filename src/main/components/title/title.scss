@@ -1,0 +1,32 @@
+.title{
+    display: flex;
+    align-items:center;
+    height: 40px;
+
+    h2{
+        color:#707090;
+    }
+    .form-element{
+        display: flex;
+        label {
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+    } 
+    button{
+        background-color: #373A3B;
+        color:#fff;
+        border:0px;
+        padding:8px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+#searchInput{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid lightgrey;
+
+}
