@@ -12,6 +12,11 @@ function Drawer(props) {
   const { book } = props;
   const [open, setOpen] = useState(false);
 
+  /** random page number that ranges from hobbit to the lord of the rings */
+  const randomPageNumber = Math.floor(Math.random() * 1178) + 310;
+  /** avarage read time according to the page number */
+  const readTime = Math.floor(randomPageNumber / 40);
+
   return (
     <div className="drawer">
       <div onClick={() => setOpen(!open)} className="drawerTitle">
@@ -29,11 +34,11 @@ function Drawer(props) {
           <div className="drawerSubSection">
             <div className="drawerSecondSubSection">
               <img src={pages} alt="icon" />
-              <span>470</span>
+              <span>{randomPageNumber}</span>
             </div>
             <div className="drawerSecondSubSection">
               <img src={study} alt="icon" />
-              <span>32 hours read time</span>
+              <span>{readTime} hours read time</span>
             </div>
           </div>
         </div>
