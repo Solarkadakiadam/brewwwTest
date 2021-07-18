@@ -1,6 +1,9 @@
 import "./header.scss";
 import logo from "../../../styles/logo/logo.png";
 
+/**
+ * This component is the shared header all over the app
+ */
 function Header() {
   return (
     <div className="header">

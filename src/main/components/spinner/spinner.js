@@ -1,6 +1,9 @@
 import "./spinner.scss";
 import Loader from "react-loader-spinner";
 
+/**
+ * This is the spinner component
+ */
 function Spinner() {
   return (
     <div className="spinner">

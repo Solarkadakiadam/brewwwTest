@@ -3,12 +3,16 @@ import { useAPI } from "../../context/apiContext";
 import { useState } from "react";
 import Spinner from "../spinner/spinner";
 
+/**
+ * This component renders the author search field
+ */
 function Title() {
   const { setAuthor, loading, author, data } = useAPI();
   const [text, setText] = useState("");
 
-  console.log(data, "burdaki");
-
+  /**
+   * This function triggers the set author function in context to create a new api call
+   */
   const searchAuthor = () => {
     if (text === "") {
       alert("Please Enter a author id");

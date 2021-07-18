@@ -1,6 +1,9 @@
 import "./errorCard.scss";
 import empty from "../../../styles/icons/empty.png";
 
+/**
+ * This component displays the error page
+ */
 function ErrorCard() {
   return (
     <div className="errorCard">
