@@ -1,9 +1,9 @@
 import "./drawer.scss";
 import { useState } from "react";
-import right from "../../../styles/icons/right.png";
-import down from "../../../styles/icons/down.png";
-import study from "../../../styles/icons/study.png";
-import pages from "../../../styles/icons/pages.png";
+import right from "../../../assets/icons/right.png";
+import down from "../../../assets/icons/down.png";
+import study from "../../../assets/icons/study.png";
+import pages from "../../../assets/icons/pages.png";
 
 /**
  * This is the drawer component within the card.

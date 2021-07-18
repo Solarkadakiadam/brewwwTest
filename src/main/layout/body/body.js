@@ -1,8 +1,8 @@
 import Title from "../../components/title/title";
-import "./body.scss";
 import { useAPI } from "../../context/apiContext";
 import Card from "../../components/card/card";
 import ErrorCard from "../../components/errorCard/errorCard";
+import "./body.scss";
 
 /**
  * This component works as the main view of the board page.

@@ -1,5 +1,5 @@
 import "./header.scss";
-import logo from "../../../styles/logo/logo.png";
+import logo from "../../../assets/logo/logo.png";
 
 /**
  * This component is the shared header all over the app

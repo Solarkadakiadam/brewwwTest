@@ -1,5 +1,5 @@
 import "./errorCard.scss";
-import empty from "../../../styles/icons/empty.png";
+import empty from "../../../assets/icons/empty.png";
 
 /**
  * This component displays the error page

@@ -1,5 +1,5 @@
 import "./card.scss";
-import questionIcon from "../../../styles/icons/questionMark.png";
+import questionIcon from "../../../assets/icons/questionMark.png";
 import Drawer from "../drawer/drawer";
 import Helpers from "../../helper/helper";
 
@@ -8,6 +8,8 @@ import Helpers from "../../helper/helper";
  */
 function Card(props) {
   const { data, colorKey, year } = props;
+
+  console.log(data);
 
   const renderDrawers = () => {
     return data.map((book) => {
